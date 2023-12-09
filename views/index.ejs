@@ -1,0 +1,16 @@
+<h1>Hello World</h1>
+<p>Welcome to node web server...</p>
+
+<% const name='Primordial' %>
+<h2>Hello, <%= name %></h2>
+<h4><%= email %></h4>
+
+<h4>Members</h4>
+<% if (members.length < 1) { %>
+<p>Empty members...</p>
+<% } else { %> <% members.forEach(pgw=> { %>
+<ul>
+  <li>Nama: <%= pgw.nama %></li>
+  <li>Email: <%= pgw.email %></li>
+</ul>
+<% }) %> <% } %>
